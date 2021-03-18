@@ -1,3 +1,3 @@
-def call() {
-    sh 'echo Hey!!! This is a hello example from shared library'
+def call(Map config = [:]) {
+    sh "echo Hello ${config.name}. Today is ${config.dayOfWeek}"
 }
